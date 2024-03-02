@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="block"></section>
+    <hr>
+    <button id="btn" onclick="btnClick()">click me</button>
+
+    <script>
+        document.write(`<h1> welcome to javascript </h1>`);
+        document.writeln(`<h1> welcome to javascript </h1>`);
+
+        document.getElementById('block').innerHTML = `<h1> custom Location text </h1>`;
+        document.getElementById('block').style.backgroundColor ='orange';
+        document.getElementById('block').style.color = '#fff';
+        document.getElementById('block').style.padding = '20px';
+        document.getElementById('block').style.textAlign = 'center';
+    </script>
+
+    <script>
+        function btnClick() {
+            document.getElementById('btn').innerText = "butten closed";
+
+            document.getElementById('block').innerHTML = `<h1> good luck</h1>`;
+        document.getElementById('block').style.backgroundColor ='red';
+        document.getElementById('block').style.color = '#fff';
+        document.getElementById('block').style.padding = '20px';
+        document.getElementById('block').style.textAlign = 'center';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b) {
+            return a+b;
+        }
+        // function expression (const functions)
+        // local function 
+
+        var product = function(a,b) {
+            return a * b;
+
+        }
+// array function
+        var rem = (a,b) => {
+            return a% b;
+
+        }
+
+        document.write(`<h1> sum = ${sum(33,44)} </h1>`);
+        document.write(`<h1> product = ${product(33,44)} </h1>`);
+        document.write(`<h1> rem = ${rem(33,44)} </h1>`);
+        
+
+    </script>
+</body>
+</html>

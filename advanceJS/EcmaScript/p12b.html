@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>parametrised map constructor</h3>
+
+    <script>
+        //let instance = new map ([[key1,value1],[key2,valiue2],[key3,value3]]); // Enteries 
+        //key => value [key,value]
+
+        let x = new Map([[1,3],[4,5],[8,9]]);
+
+        console.log('x = ',x);
+        document.write(`<h1> x.get(4) = ${x.get(4)}</h1>`);
+        document.write(`<h1> size befoure clear = ${x.size}</h1>`);
+
+        x.clear(); //clear the enteries
+        console.log('after clear x =',x);// empty map constrecter 
+        document.write(`<h1> after befoure clear = ${x.size}</h1>`);
+    </script>
+</body>
+</html>

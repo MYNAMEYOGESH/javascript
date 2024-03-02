@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        greatest of given numbers
+    </h1>
+<!-- 
+    <div>
+        <form onsubmit="submitHandler(event)">
+           
+                <label for="one">Enter 1 st element</label>
+                <input type="number" name="a" id="a" required>
+                    <br><br>
+                <label for="two">Enter 2 nd element</label>
+                <input type="number" name="b" id="b" required>
+                    <br><br>
+                <label for="three">Enter 3rd element</label>
+                <input type="number" name="c" id="c" required>
+                    <br><br>
+                <label for="fourth">Enter 4 th element</label>
+                <input type="number" name="d" id="d" required>
+                    <br><br>
+                <label for="fiveth">Enter 5 th element</label>
+                <input type="number" name="e" id="e" required>
+            
+            <div>
+               <button type="submit">submits</button>
+            </div>
+        </form> -->
+        <script>
+           /*   function submitHandler(e) {
+            e.preventDefault(); */
+            var a =prompt("enter a");
+            var b =prompt("entet b");
+            var c =prompt("enter c");
+            var d =prompt("enter d");
+            var e =prompt("enter e");
+            var x = Number(a);
+            var y = Number(b);
+            var z = Number(c);
+            var p = Number(d);
+            var q = Number(e);
+           
+           
+            if(x > y && x > z && x > p && x > q) {
+                document.write(` <h1> ${x} is grater </h1>`);
+            }
+             else if(y > x && y > z && y > p && y > q) {
+                document.write(` <h1> ${y} is grater </h1>`);
+            }
+             else if(z > y && z > x && z > p && z > q) {
+                document.write(` <h1> ${z} is grater </h1>`);
+            }
+             else if(p > y && p > z && p > x && p > q) {
+                document.write(` <h1> ${p} is grater </h1>`);
+            }
+             else if(q > y && q > z && q > p && q > x) {
+                document.write(` <h1> ${q} is grater </h1>`);
+            }
+        
+        
+        
+        //}
+        </script>
+  <!--   </div> -->
+</body>
+</html>

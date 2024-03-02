@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: #bdc8e4;
+        }
+
+        #traffic-signal {
+            height: 605px;
+            width: 200px;
+            
+            margin: auto;
+            border: 15px solid #222;
+            background-color: rgb(89, 91, 93);
+        }
+        #traffic-signal > div{
+       
+        opacity: .3;
+      }
+
+         div{
+            display: flex;
+            width: 200px;
+            height: 197.5px; 
+            border-radius: 50%;
+            margin: auto;
+        
+            object-fit: cover;
+            object-position: center;
+            
+        }
+
+        #red {
+            background-color: hsl(0, 94%, 65%);
+            border: 3px solid #222;
+        }
+        #yellow {
+            background-color: hwb(61 44% 3%);
+            border: 3px solid #222;
+        }
+        #green {
+            background-color: hsl(131, 94%, 65%);
+            border: 3px solid #222;
+           
+        }
+
+    </style>
+</head>
+<body onload="timer;">
+    <section id="traffic-signal">
+       <div id="red" ></div>
+       <div id="yellow"></div>
+       <div id="green"></div>
+    </section>
+    
+    <script src="./js/p9.js"></script>
+</body>
+</html>

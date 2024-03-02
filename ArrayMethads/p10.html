@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sort()</h1>
+    <script>
+           let ageGroupe = [18, 21, 1, 1, 51, 18, 21, 5, 18, 7, 10];
+            console.log(`before sort`,ageGroupe);
+
+            var asc = ageGroupe.sort((a,b) => a - b);
+
+            console.log(`ascending =`,asc);
+
+            var des = ageGroupe.sort((a,b) => b - a);
+
+            console.log(`descending =`,des);
+    </script>
+</body>
+</html>

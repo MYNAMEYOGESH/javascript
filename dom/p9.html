@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+        }
+
+        div {
+            margin-right: 20px;
+        }
+
+        label,button {
+            display: flex;
+            margin: 10px;
+        }
+
+        .btn {display: flex;
+        flex-flow: column;
+        justify-content: center;
+        }
+
+        select {
+            width: 200px;
+            height: 230px;
+        }
+    </style>
+</head>
+<body>
+    <h1>replaceChildren</h1>
+     <section>
+
+        <div>
+            <label for="no">no thanks !</label>
+            <select  id="no" multiple size="10">
+                <option value="blue">blue</option>
+                <option value="white">white</option>
+                <option value="orenge">orenge</option>
+                <option value="pink">pink</option>
+                <option value="blue">green</option>
+                <option value="deepskyblue">deepskyblue</option>
+                <option value="teal">teal</option>
+                <option value="darkgray">darkgray</option>
+                <option value="red">red</option>
+                <option value="gold">gold</option>
+                <option value="yellow">yellow</option>
+                <option value="slateblue">slateblue</option>
+                <option value="violet">violet</option>
+                <option value="black">black</option>
+                <option value="gray">gray</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <button id="to-yes">add for selection</button>
+            <button id="to-no">remove from delection</button>
+        </div>
+
+        <div>
+            <label for="yes">yes please</label>
+            <select multiple id="yes" size="10"></select>
+        </div>
+     </section>
+
+     <script>
+        var noSel = document.getElementById("no");
+        var yesSel = document.getElementById('yes');
+
+        var yesBtn = document.getElementById("to-yes");
+        var noBtn = document.getElementById("to-no");
+    /*  adding items to empty select */
+        yesBtn.addEventListener('click', function(){
+            let selOpt = document.querySelectorAll('#no option:checked');
+            console.log('selOpt', selOpt);
+            let existOpt = document.querySelectorAll('#yes option');
+            yesSel.replaceChildren(...selOpt, ...existOpt);// ....spread operater
+        });
+
+        //removing items from select 
+        noBtn.addEventListener('click',function(){
+            let selOpt = document.querySelectorAll('#yes option:checked');
+            let existOpt = document.querySelectorAll('#no option');
+            noSel.replaceChildren(...selOpt, ...existOpt);
+//...spread -> operation array to parameter
+        });
+
+        // tesBtn :clickon =function(){}
+     </script>
+</body>
+</html>

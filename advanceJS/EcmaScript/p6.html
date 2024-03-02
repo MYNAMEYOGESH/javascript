@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Default parameter in function (to avoide nan)</h2>
+
+    <script>
+        function sum(a,b=10) {
+            document.write(`<h1> sum = ${ a + b} <h1> `);
+        }
+
+        sum(12,23);//45
+        sum(22);// nan
+    </script>
+
+    <script>
+        function mul(a,b=2,c=3) {
+            document.write(`<h1> prodect = ${a * b * c}<h1>`)
+        }
+
+        mul(10,4,5)
+        mul(10,4)
+        mul(10)
+    </script>
+</body>
+</html>

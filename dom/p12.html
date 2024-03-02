@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 160px;
+            height: 50px;
+            background-color: #44ff33;
+            margin: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>query Selector All</h3>
+    <section>
+        <div class="box" id="1">
+            <p>html</p>
+            <input type="checkbox" name="box1" id="box1" value="html">
+        </div>
+
+        <div class="box" id="2">
+            <p>css</p>
+            <input type="checkbox" class="box2" id="box2" value="css">
+        </div>
+        <div class="box" id="3">
+            <p>javascript</p>
+            <input type="checkbox" class="box3" id="box3" value="javascript">
+        </div>
+        <div class="box" id="4">
+            <p>ReactJS</p>
+            <input type="checkbox" class="box4" id="box4" value="React">
+        </div>
+    </section>
+
+    <script>
+        let selBox = document.querySelector('section');
+        let selectedDat = [];
+
+        selBox.addEventListener('change',(event) => {
+            console.log('sel ected item = ',event.target);
+            if(event.target.type === "ckeckbox") {
+                let checkbox = document.querySelectorAll("input[type='checkbox']:checked");
+                console.log('checked =',checked);
+                selectedDat = Array.from(checked).map(x => x.value);
+                console.log('selected Data = ',selectedDat);
+            }
+           
+        })
+    </script>
+</body>
+</html>

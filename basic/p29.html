@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = new Array();
+        // assign he value 
+        x[0] = "blue";
+        x[1] = "red";
+        x[2] = "black";
+        x[3] = "crimson";
+
+        document.write(`<h1>${ x } </h1>`);
+        document.write(`<h1>${ x[3] } </h1>`);
+
+        /* array.foreach(callback function )
+            array.forEach(function(param){
+                    //param => index
+            });
+             */
+
+           
+                x.forEach(function(value,index){
+                document.write(`<h3 style='color:red;'>${ index } . ${ value }</h3>`);
+                });
+
+    </script>
+</body>
+</html>

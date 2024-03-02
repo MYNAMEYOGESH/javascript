@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> spresd (...)  operater with math constructer </h3>
+    <script>
+        var num = [44,455,56,11,77,99,900];
+        console.log('num =',num);
+        console.log('parameters (spread) = ', ...num);
+
+        document.write(`<h3> max = ${Math.max(num) }</h3>`);// NoN
+        document.write(`<h3> max = ${Math.max([44,455,56,11,77,99,900]) }</h3>`);// NoN
+
+
+        document.write(`<h3> max = ${Math.max(...num) }</h3>`);// NoN
+        document.write(`<h3> min = ${Math.min(44,455,56,11,77,99,900)}</h3>`);// NoN
+
+    </script>
+</body>
+</html>
